@@ -1,0 +1,133 @@
+/* General style */
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --main-color: rgb(230, 95, 120);
+}
+.section__title p {
+  width: 30%;
+  color: rgb(108, 117, 125);
+}
+
+/* Header Section */
+.home {
+  background-image: url(./../images/header-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.home .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+.home .nav-link:hover {
+  color: var(--main-color);
+}
+.home .home__caption button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.home .setting {
+  top: 20%;
+}
+.home .scroll {
+  top: 80%;
+  left: 55%;
+  transform: translateX(-50%);
+  animation: moving 2s infinite;
+}
+@keyframes moving {
+  0% {
+    top: 80%;
+  }
+  10% {
+    top: 81%;
+  }
+  20% {
+    top: 82%;
+  }
+  30% {
+    top: 83%;
+  }
+  40% {
+    top: 84%;
+  }
+  50% {
+    top: 85%;
+  }
+  60% {
+    top: 84%;
+  }
+  80% {
+    top: 83%;
+  }
+  80% {
+    top: 82%;
+  }
+  90% {
+    top: 81%;
+  }
+  100% {
+    top: 80%;
+  }
+}
+.up_icon {
+  bottom: 3%;
+  right: 3%;
+  background-color: var(--main-color);
+}
+/* services Start */
+.services i {
+  color: var(--main-color);
+}
+.services__item h3::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+.services__item:hover h3::after {
+  width: 50px;
+}
+/* Client Section */
+.client .carousel-inner i {
+  color: var(--main-color);
+}
+.client .carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+  width: 15px;
+  height: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.carousel-indicators .active {
+  width: 25px !important;
+}
+
+/* Work */
+.work .tab__layer {
+  transition: all 0.5s;
+}
+
+.work .tab__layer:hover {
+  opacity: 1 !important;
+}
+.work .nav-pills .nav-link.active {
+  background-color: var(--main-color);
+  color: white !important;
+  border-radius: 20px !important;
+}
